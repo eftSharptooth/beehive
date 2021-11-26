@@ -24,7 +24,7 @@ RUN apk update && \
 COPY --from=builder /go/beehive/beehive /go/bin/beehive
 
 # Where the admin interface will be served from
-ENV CANONICAL_URL=http://localhost:8181
+ENV CANONICAL_URL=http://192.168.1.47:8181
 
 # Expose the application port
 EXPOSE 8181
