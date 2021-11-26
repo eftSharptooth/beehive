@@ -10,7 +10,7 @@ services:
       - beehive-conf:/conf
     environment:
       # be sure not to pass quotes, just the bare url
-      - CANONICAL_URL=http://localhost:8181
+      - CANONICAL_URL=http://192.168.1.47:8181
 
 volumes:
   beehive-conf:
